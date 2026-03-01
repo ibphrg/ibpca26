@@ -15,7 +15,7 @@ body{
 #container{
     display:flex;
     max-width:90%;
-    margin:10px auto;
+    margin:10px auto 100px;
 }
 
 #container p{
@@ -76,23 +76,78 @@ body{
     scale:92%;
 }
 
+.secretShout {
+    font-size: 10px;
+    text-align: center;
+    justify-content: flex-end;
+}
+
 #infoGraph{
     display:grid;
     grid-template-columns: 25% 75%;
     background-color: white;
     padding: 12px;
+    margin: 25px auto;
+}
+
+#infoGraph a{
+    border: 3px white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#infoGraph a#animeButton:hover{
+  background-image:url("/img/animeBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#infoGraph a#artButton:hover{
+  background-image:url("/img/artBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#infoGraph a#booksButton:hover{
+    background-image:url("/img/booksBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#infoGraph a#foodButton:hover{
+    background-image:url("/img/foodBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#infoGraph a#gamesButton:hover{
+    background-image:url("/img/gamesBG.png");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 #infoGraph div{
-    border: 2px white solid;
     padding: 8px;
     text-align: center;
 }
 
 #infoGraph div.second{
     background-color: #525280;
+     border: 3px white solid;
+    color: white;
 }
 
+#favGraph {
+    margin: 25px auto;
+}
+
+.limbusStory{
+    margin-top: 25px;
+    max-height: 350px;
+    overflow-y: auto;
+}
 .PHRG{
     color:blue;
     font-weight: bold;
@@ -118,6 +173,53 @@ summary{
     background-color: black;
     padding: 10px;
     text-align: center;
+}
+
+.mySlides {display: none}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 .footer {
@@ -162,7 +264,6 @@ summary{
 
     #container{
     display: flex;
-    margin: 10px auto 50px;
    }
 
 }
@@ -171,6 +272,10 @@ summary{
 
    #side {
     display: none;
+   }
+
+   #header{
+    text-align: center;
    }
 
 }
@@ -185,13 +290,12 @@ summary{
     background-color: rgb(138, 86, 129);
     align-items: baseline;
     color: white;
-    padding: 0 50px;
    }
 
    #container{
     display: flex;
     flex-direction: column;
-    margin: 10px auto 250px;
+
    }
 
    #side {
@@ -216,7 +320,6 @@ summary{
     }
 
     #infoGraph div{
-    border: 2px white solid;
     padding: 3px;
     text-align: center;
 }
