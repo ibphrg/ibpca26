@@ -98,31 +98,31 @@ body{
     font-weight: bold;
 }
 
-#infoGraph a#animeButton:hover{
+#animeButton:hover{
   background-image:url("/img/animeBG.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#infoGraph a#artButton:hover{
+#artButton:hover{
   background-image:url("/img/artBG.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#infoGraph a#booksButton:hover{
+#booksButton:hover{
     background-image:url("/img/booksBG.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#infoGraph a#foodButton:hover{
+#foodButton:hover{
     background-image:url("/img/foodBG.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#infoGraph a#gamesButton:hover{
+#gamesButton:hover{
     background-image:url("/img/gamesBG.png");
     background-repeat: no-repeat;
     background-size:cover;
