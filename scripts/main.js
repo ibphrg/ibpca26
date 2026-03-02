@@ -2,7 +2,7 @@ const btnA = document.getElementById('btnAbout');
 const btnH = document.getElementById('btnHobbies');
 const btnF = document.getElementById('btnFaves');
 const scolip = document.getElementById('scoliCry');
-let slideIndex = 0;
+let startNum = 1;
 
 let aboutMe =
   '<h3>Ian Brown</h3>' +
@@ -67,7 +67,7 @@ btnH.addEventListener('click', function () {
 
 btnF.addEventListener('click', function () {
   document.getElementById('textBody').innerHTML = aboutFaves;
-  showSlides(0);
+  showSlides(startNum);
 });
 
 scolip.addEventListener('click', function () {
@@ -76,6 +76,8 @@ scolip.addEventListener('click', function () {
   audio.play();
 });
 
+/*w3schools js slideshow */
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -93,7 +95,7 @@ function showSlides(n) {
     slideIndex = 1;
   }
   if (n < 1) {
-    slideIndex = 1;
+    slideIndex = slides.length;
   }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none';
