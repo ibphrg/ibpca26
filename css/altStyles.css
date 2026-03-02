@@ -61,17 +61,6 @@ body{
     margin: 0;
 }
 
-#textBody a{
-    text-decoration: none;
-    color: white;
-    background-color: #525280;
-    transition: 0.3s;
-}
-
-#textBody a:hover{
-    background-color: #1d1d36;
-}
-
 #textBody a:active{
     scale:92%;
 }
@@ -96,36 +85,40 @@ body{
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #525280;
+    transition: 0.3s;
 }
 
 #animeButton:hover{
-  background-image:url("/img/animeBG.png");
+  background-image: url("../img/animeBG.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #artButton:hover{
-  background-image:url("/img/artBG.png");
+  background-image: url("../img/artBG.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #booksButton:hover{
-    background-image:url("/img/booksBG.png");
+    background-image: url("../img/booksBG.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #foodButton:hover{
-    background-image:url("/img/foodBG.png");
+    background-image: url("../img/foodBG.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #gamesButton:hover{
-    background-image:url("/img/gamesBG.png");
+    background-image: url("../img/gamesBG.png");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
 #infoGraph div{
