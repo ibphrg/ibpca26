@@ -2,6 +2,7 @@ const btnA = document.getElementById('btnAbout');
 const btnH = document.getElementById('btnHobbies');
 const btnF = document.getElementById('btnFaves');
 const scolip = document.getElementById('scoliCry');
+const btnPkmn = document.getElementById('whosThat');
 let startNum = 1;
 
 let aboutMe =
@@ -11,7 +12,8 @@ let aboutMe =
   '<p>Ian is a passionate, life long learner that is eager to embark on the next great chapter of his life.</p>' +
   '<p>Ian was born in Maryland, but moved to and grew up in Delaware from when he was five years old. He graduated from the University of Delaware in 2011 with a Bachelor of the Arts in the Fine Art program.</p>' +
   "<p>As someone who grew up with the internet, Ian's love of programming started small and familiar for a lot of his peers- on an up and coming website called Neopets™ that let you take basic HTML to your storefront and make it yours. This would later transition to MySpace™ making profile pages for people now using CSS.</p>" +
-  '<p>As an adult, and still looking to do more, Ian went back to school and got an Associates in Computer Science at Del Tech University before ultimately landing at <span class="PHRG" title="I work here!">Power Home Remodeling Group</span> and joined their <span class="PHRG" title="This is my job!">Ninja Support Team</span> with the driving light of one day joining the PCA.</p>';
+  '<p>As an adult, and still looking to do more, Ian went back to school and got an Associates in Computer Science at Del Tech University before ultimately landing at <span class="PHRG" title="I work here!">Power Home Remodeling Group</span> and joined their <span class="PHRG" title="This is my job!">Ninja Support Team</span> with the driving light of one day joining the PCA.</p>' +
+  "<p>But first thing's first...</p>";
 
 let aboutHobbies =
   '<h1>Hobbies</h1>' +
@@ -59,21 +61,32 @@ let aboutFaves =
 
 btnA.addEventListener('click', function () {
   document.getElementById('textBody').innerHTML = aboutMe;
+  document.getElementById('pkmnSection').style.display = 'block';
 });
 
 btnH.addEventListener('click', function () {
   document.getElementById('textBody').innerHTML = aboutHobbies;
+  document.getElementById('pkmnSection').style.display = 'none';
 });
 
 btnF.addEventListener('click', function () {
   document.getElementById('textBody').innerHTML = aboutFaves;
   showSlides(startNum);
+  document.getElementById('pkmnSection').style.display = 'none';
 });
 
 scolip.addEventListener('click', function () {
   var audio = document.getElementById('audioPlay');
   audio.load();
   audio.play();
+});
+
+btnPkmn.addEventListener('click', function () {
+  var yourFav = document.getElementById('textbox').value;
+  yourFav = yourFav.toLowerCase();
+  document.getElementById('whatPkmn').src =
+    'https://img.pokemondb.net/artwork/large/' + yourFav + '.jpg';
+  document.getElementById('hiThere').style.display = 'block';
 });
 
 /*w3schools js slideshow */

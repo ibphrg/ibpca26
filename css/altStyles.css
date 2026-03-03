@@ -53,6 +53,33 @@ body{
     overflow: auto;
 }
 
+#pkmnSection{
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin:auto;
+}
+
+#whosThat {
+    width:200px;
+}
+
+#hiThere{
+    display:none;
+    margin-top: 10px;
+}
+
+#textbox{
+    width:198px;
+    margin: 5px auto;
+    padding:0;
+}
+#whatPkmn {
+    display: block;
+    width: 200px;
+    margin: auto;
+}
+
 #textBody{
     padding: 40px;
 }
