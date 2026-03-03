@@ -86,7 +86,11 @@ function whoDatMon() {
   document.getElementById('whatPkmn').src =
     'https://img.pokemondb.net/artwork/large/' + yourFav + '.jpg';
 
-  if (yourFav == 'scolipede') {
+  if (
+    yourFav == 'scolipede' ||
+    yourFav == 'venipede' ||
+    yourFav == 'whirlipede'
+  ) {
     document.getElementById('nicePick').style.display = 'block';
     document.getElementById('hiThere').style.display = 'none';
   } else {
