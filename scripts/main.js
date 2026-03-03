@@ -2,7 +2,6 @@ const btnA = document.getElementById('btnAbout');
 const btnH = document.getElementById('btnHobbies');
 const btnF = document.getElementById('btnFaves');
 const scolip = document.getElementById('scoliCry');
-const btnPkmn = document.getElementById('whosThat');
 let startNum = 1;
 
 let aboutMe =
@@ -81,13 +80,20 @@ scolip.addEventListener('click', function () {
   audio.play();
 });
 
-btnPkmn.addEventListener('click', function () {
+function whoDatMon() {
   var yourFav = document.getElementById('textbox').value;
   yourFav = yourFav.toLowerCase();
   document.getElementById('whatPkmn').src =
     'https://img.pokemondb.net/artwork/large/' + yourFav + '.jpg';
-  document.getElementById('hiThere').style.display = 'block';
-});
+
+  if (yourFav == 'scolipede') {
+    document.getElementById('nicePick').style.display = 'block';
+    document.getElementById('hiThere').style.display = 'none';
+  } else {
+    document.getElementById('hiThere').style.display = 'block';
+    document.getElementById('nicePick').style.display = 'none';
+  }
+}
 
 /*w3schools js slideshow */
 let slideIndex = 1;
