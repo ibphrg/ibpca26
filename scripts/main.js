@@ -80,12 +80,13 @@ scolip.addEventListener('click', function () {
   audio.play();
 });
 
-function whoDatMon() {
+document.getElementById('pkmnForm').addEventListener('submit', whoDatMon);
+
+function whoDatMon(e) {
   var yourFav = document.getElementById('textbox').value;
   yourFav = yourFav.toLowerCase();
   document.getElementById('whatPkmn').src =
     'https://img.pokemondb.net/artwork/large/' + yourFav + '.jpg';
-
   if (
     yourFav == 'scolipede' ||
     yourFav == 'venipede' ||
@@ -97,6 +98,8 @@ function whoDatMon() {
     document.getElementById('hiThere').style.display = 'block';
     document.getElementById('nicePick').style.display = 'none';
   }
+  document.getElementById('textbox').value = null;
+  e.preventDefault();
 }
 
 /*w3schools js slideshow */

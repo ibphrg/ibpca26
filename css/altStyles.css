@@ -83,6 +83,7 @@ body{
     display: block;
     width: 200px;
     margin: 10px auto;
+    border-radius: 9px;
 }
 
 #textBody{
