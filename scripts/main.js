@@ -70,6 +70,7 @@ let aboutFaves =
 btnA.addEventListener('click', function () {
   document.getElementById('textBody').innerHTML = aboutMe;
   document.getElementById('pkmnSection').style.display = 'block';
+  document.getElementById('shine').style.display = 'block';
 });
 
 btnH.addEventListener('click', function () {
