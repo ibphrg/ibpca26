@@ -114,6 +114,7 @@ function whoDatMon(e) {
     document.getElementById('hiThere').style.display = 'block';
     document.getElementById('nicePick').style.display = 'none';
   }
+  document.getElementById('shine').style.display = 'none';
   document.getElementById('textbox').value = null;
   e.preventDefault();
 }
