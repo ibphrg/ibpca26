@@ -2,6 +2,7 @@ const btnA = document.getElementById('btnAbout');
 const btnH = document.getElementById('btnHobbies');
 const btnF = document.getElementById('btnFaves');
 const scolip = document.getElementById('scoliCry');
+const pokeB = document.getElementById('shine');
 let startNum = 1;
 
 let aboutMe =
@@ -86,6 +87,13 @@ scolip.addEventListener('click', function () {
   var audio = document.getElementById('audioPlay');
   audio.load();
   audio.play();
+});
+
+pokeB.addEventListener('click', function () {
+  document.getElementById('shine').style.opacity = 100;
+  setTimeout(function () {
+    document.getElementById('shine').style.opacity = 0;
+  }, 200);
 });
 
 document.getElementById('pkmnForm').addEventListener('submit', whoDatMon);
