@@ -1,14 +1,15 @@
 body{
     margin: 0;
-    background-color: yellow;
+    background-color: rgb(230, 223, 214);
     font-family: sans-serif;
 }
 
 #header{
     display:flex;
-    background-color: rgb(138, 86, 129);
+    background-color: rgb(30, 27, 172);
     align-items: baseline;
     color: white;
+    border-bottom: 5px white solid;
     padding: 0 250px;
 }
 
@@ -34,12 +35,12 @@ body{
     border: none;
     padding: 10px 40px;
     color: white;
-    background-color: rgb(138, 86, 129);
+    background-color: rgb(113, 124, 221);
     transition: 0.3s;
 }
 
 #henshin button:hover{
-    background-color: rgb(92, 48, 85);
+    background-color: rgb(50, 59, 190);
 }
 
 #henshin button:active {
@@ -48,7 +49,7 @@ body{
 
 #main{
     flex:60%;
-    background-color: #ccc;
+    background-color: rgb(230, 223, 214);
     padding: 25px;
     overflow: auto;
 }
@@ -133,7 +134,7 @@ body{
     font-weight: bold;
     text-decoration: none;
     color: white;
-    background-color: #525280;
+    background-color: rgb(113, 124, 221);
     transition: 0.3s;
 }
 
@@ -173,8 +174,8 @@ body{
 }
 
 #infoGraph div.second{
-    background-color: #525280;
-     border: 3px white solid;
+    background-color: rgb(135, 143, 219);
+    border: 3px white solid;
     color: white;
 }
 
@@ -186,34 +187,33 @@ body{
     margin-top: 25px;
     max-height: 320px;
     overflow-y: auto;
-    border: #525280 3px solid;
+    border: rgb(50, 59, 190) 3px solid;
     padding: 5px;
+    color: rgb(80, 80, 80)
 }
 .PHRG{
     color:blue;
     font-weight: bold;
 }
 
-summary{
-    text-decoration: none;
-    background-color: #525280;
+.insides{
+    background-color: white;
     width:95%;
     margin:auto;
     padding: 5px;
 }
 
-.insides{
-    background-color: white;
-   width:95%;
-   margin:auto;
-   padding: 5px;
-}
-
 #side{
     flex: 40%;
-    background-color: black;
+    background-color: rgb(230, 223, 214);
     padding: 10px;
     text-align: center;
+    border-left: rgb(50, 59, 190) 20px solid;
+    border-radius: 50px;
+}
+
+#selfie{
+    border-radius: 12px;
 }
 
 .mySlides {
@@ -273,9 +273,9 @@ summary{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(92, 48, 85);
+    background-color: rgb(30, 27, 172);
     color: white;
-    border-top: 5px black solid;
+    border-top: 5px white solid;
     justify-content: center;
 }
 
@@ -306,7 +306,6 @@ summary{
         padding: 10px 40px;
         border: none;
         color: white;
-        background-color: rgb(138, 86, 129);
         transition: 0.3s;
         }
 
@@ -335,7 +334,6 @@ summary{
 
   #header{
     display:flex;
-    background-color: rgb(138, 86, 129);
     align-items: baseline;
     color: white;
     padding:0 10px;
@@ -365,6 +363,7 @@ summary{
     }
 
    #textBody{
+    margin-top: 25px;
     padding: 3px;
     }
 
