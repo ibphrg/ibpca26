@@ -171,8 +171,10 @@ body{
 
 .limbusStory{
     margin-top: 25px;
-    max-height: 350px;
+    max-height: 320px;
     overflow-y: auto;
+    border: #525280 3px solid;
+    padding: 5px;
 }
 .PHRG{
     color:blue;
@@ -203,7 +205,8 @@ summary{
 
 .mySlides {
     display: none;
-margin-top: 15px;}
+    margin-top: 15px;
+}
 
 .slideshow-container {
   max-width: 1000px;
