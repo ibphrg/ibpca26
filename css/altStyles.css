@@ -177,7 +177,7 @@ body{
 
 #infoGraph div.second{
     background-color: rgb(122, 132, 204);
-    border: 3px white solid;
+    border: 3px rgb(243, 242, 241) solid;
     color: white;
 }
 
