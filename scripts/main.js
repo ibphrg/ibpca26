@@ -69,7 +69,7 @@ let aboutFaves =
 
 btnA.addEventListener('click', function () {
   document.getElementById('textBody').innerHTML = aboutMe;
-  document.getElementById('whatPkmn').src = '/img/Pokeball.png';
+  document.getElementById('whatPkmn').src = '../img/Pokeball.png';
   document.getElementById('pkmnSection').style.display = 'block';
   document.getElementById('shine').style.display = 'block';
 });
