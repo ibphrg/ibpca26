@@ -11,6 +11,9 @@ body{
     color: white;
     border-bottom: 5px white solid;
     padding: 0 250px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    
 }
 
 #container{
