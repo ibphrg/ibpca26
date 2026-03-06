@@ -30,7 +30,7 @@ let aboutHobbies =
   '<a href=\"https://ramenkumamoto.com/\" target="_blank" id="foodButton"><div>Food</div></a>' +
   '<div class=\"second\"><p>I know everyone needs to eat but I <i>really</i> enjoy getting to try new flavors and textures of food from around the world.</p></p>Recently, My love for food has taken me to a local ramen shop that does some of the best tonkotsu broth I\'ve ever had. I swear it\s the worlds most drinkable gravy.</p></div>' +
   '<a href=\"https://www.bookbub.com/referral/c52481cba4647f48\" target="_blank" id="booksButton"><div>Books</div></a>' +
-  '<div class=\"second\">I used to be an <i>avid</i> reader but as I grew up and had more responsibilities and even just other hobbies it\s something I grew out of but something that I\'m trying to get back into. Horror is my particular favorite with Epic Fantasies close behind.<p>I also am a big champion for E-Books, being able to carry that many at once is next level, and you can get really good deals!</div>' +
+  '<div class=\"second\"><I used to be an <i>avid</i> reader but as I grew up and had more responsibilities and even just other hobbies it\s something I grew out of but something that I\'m trying to get back into. Horror is my particular favorite with Epic Fantasies close behind.<p>I also am a big champion for E-Books, being able to carry that many at once is next level, and you can get really good deals!</div>' +
   '</div>';
 
 let aboutFaves =

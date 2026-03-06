@@ -83,6 +83,7 @@ body{
 }
 
 .forToby{
+    margin-top: 20px;
     position:relative;
 }
 #whatPkmn {
@@ -190,6 +191,7 @@ body{
     overflow-y: auto;
     border: rgb(50, 59, 190) 3px solid;
     padding: 5px;
+    background-color: rgb(255, 255, 255);
     color: rgb(80, 80, 80)
 }
 .PHRG{
