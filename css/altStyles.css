@@ -35,7 +35,7 @@ body{
     border: none;
     padding: 10px 40px;
     color: white;
-    background-color: rgb(113, 124, 221);
+    background-color: rgb(90, 105, 192);
     border-radius: 10px;;
     transition: 0.3s;
 }
@@ -129,7 +129,7 @@ body{
 }
 
 #infoGraph a{
-    border: 3px white solid;
+    border: 3px rgb(243, 242, 241) solid;
     display: flex;
     justify-content: center;
     align-items: center;
